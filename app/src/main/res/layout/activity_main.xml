@@ -4,15 +4,35 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:layout_gravity="bottom"
+	android:background="@color/purple_700"
 	tools:context=".MainActivity">
 
 	<TextView
+		android:id="@+id/TextView"
 		android:layout_width="wrap_content"
-		android:layout_height="wrap tT_content"
-		android:text="Hello World!"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintRight_toRightOf="parent"
+		android:layout_height="wrap_content"
+		android:text="Hello, Kitty!"
 		app:layout_constraintTop_toTopOf="parent" />
+
+	<EditText
+		android:id="@+id/EditKittyName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Name"
+		android:inputType="textPersonName"
+		android:text=""
+		 app:layout_constraintTop_toBottomOf="@+id/TextView" />
+
+	<Button
+		android:id="@+id/Button1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="bottom|center"
+		android:onClick="onClickButton1"
+		android:text="Поздороваться"
+		app:layout_constraintTop_toBottomOf="@+id/EditKittyName"
+/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
