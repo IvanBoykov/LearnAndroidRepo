@@ -7,12 +7,35 @@
 	tools:context=".MainActivity">
 
 	<TextView
+		android:id="@+id/ravenCounterText"
 		android:layout_width="wrap_content"
-		android:layout_height="wrap tT_content"
-		android:text="Hello World!"
-		app:layout_constraintBottom_toBottomOf="parent"
+		android:layout_height="wrap_content"
+		android:text="@string/ravenCounterText"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
+	<TextView
+		android:id="@+id/catsCounter"
+		android:text="@string/catsCounterText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@+id/ravenCounterText"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		/>
+	<Button
+		android:id="@+id/ravenCounterButton"
+		android:text="@string/ravenButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/catsCounter" />
 
+	<Button
+		android:id="@+id/catsCounterButton"
+		android:text="@string/catButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintBaseline_toBaselineOf="@+id/ravenCounterButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+	<string name="ravenCounterText">Посчитано ворон: %d</string>
+	<string name="catsCounterText">Посчитано котов: %d</string>
+	<string name="ravenButton">Ворона</string>
+	<string name="catButton">Кот</string>
 </resources>
